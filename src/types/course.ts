@@ -1,6 +1,9 @@
-// TODO: Create a type for course ids, which should be strings
+import {Delivery} from "./common";
 
+// TODO: Create a type for course ids, which should be string
+type CourseId = string;
 // TODO: Create an interface for courses
+
 // The interface should include the following properties:
 // an id (hint: use the CourseId type created above)
 // a code (ex "CPRG 303")
@@ -12,7 +15,18 @@
 // an optional array of pre-requisite course ids (hint: use the CourseId type created above)
 // an optional note
 
+export interface Course {
+    courseId: CourseId;
+    courseCode: string;
+    courseName: string; 
+    courseDescription: string;
+    credits?: number;
+    termNumber?: number;
+    deliveryMethod?: Delivery;
+    preRequisiteCourseId?: CourseId[];
+    note?: string;
+
+}
+
 // once all group members have completed their sections, add the following field:
 // an optional array of program ids that this course is part of
-
-export interface Course {}
