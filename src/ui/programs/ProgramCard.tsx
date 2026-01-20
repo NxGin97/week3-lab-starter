@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native";
+import { Program } from "../../types/program";
 
 // TODO: Make a Props type for the props of our ProgramCard component
+export type Props = {
+  program: Program;
+};
 
 export default function ProgramCard(/*TODO: Add props here (use desctructuring)*/) {
   // TODO: Use descructuring to extract values from the program
