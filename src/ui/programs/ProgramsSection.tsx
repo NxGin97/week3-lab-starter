@@ -5,8 +5,8 @@ export default function ProgramsSection() {
   // Inside the Section, render the ProgramList component
 
   return (
-    <Section>
-      
+    <Section title={""}>
+      <ProgramsSection/>
     </Section>
   );
 }
