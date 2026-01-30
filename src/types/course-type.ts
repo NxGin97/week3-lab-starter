@@ -1,4 +1,4 @@
-import {Delivery} from "./common";
+import {Delivery} from "./common-type";
 
 // TODO: Create a type for course ids, which should be string
 type CourseId = string;

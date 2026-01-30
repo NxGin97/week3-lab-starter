@@ -1,4 +1,4 @@
-import {School} from "./common";
+import {School} from "./common-type";
 // TODO: Create a type for staff ids, which should be strings
 type StaffId  =  string;
 // TODO: Create a type for staff roles, which can be "Instructor", "Program Chair", "Coordinator", or "Advisor"
